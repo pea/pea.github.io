@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+
+@import 'adaptivegrid.scss';
+
+body {
+    font-family: helvetica;
+    font-weight: 100;
+    line-height: 1.3em;
+    margin: 40px;
+    letter-spacing: .03em;
+    color: #ded5e2;
+    background-color: #150d17;
+
+    -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Playfair Display';
+    line-height: 1.3em;
+    margin: 0;
+    letter-spacing: .05em;
+    color: #fff;
+    text-shadow: rgba(255,255,255,.3) 0 0 5px;
+}
+
+h1 + p:first-of-type,
+h2 + p:first-of-type,
+h3 + p:first-of-type,
+h4 + p:first-of-type,
+h5 + p:first-of-type {
+    margin-top: 1em;
+}
+
+p:last-of-type {
+    margin-bottom: 0;
+}
+
+header {
+    margin: 40px 0;
+    padding: 0 0 20px;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+    h1 {
+        margin: 0 0 .3em 0;
+    }
+}
+
+.max-width {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.placeholder {
+    width: 100%;
+    height: 50px;
+    border: 1px dashed RGBA(255,255,255,.8);
+}
+
+.example {
+    min-height: 100px;
+}
+
+.code {
+    padding: 20px;
+    white-space: pre-wrap;
+    border-left: 1px solid #fff;
+}
+
+.icon {
+    font-size: 30px;
+}
