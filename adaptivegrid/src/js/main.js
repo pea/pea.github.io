@@ -1,6 +1,8 @@
-[...document.querySelectorAll('.code')].forEach((item) => {
-    item.innerHTML = htmlEscape(item.innerHTML);
-});
+var divs = document.querySelectorAll('.code'), i;
+
+for (i = 0; i < divs.length; ++i) {
+    divs[i].innerHTML = htmlEscape(divs[i].innerHTML);
+}
 
 function htmlEscape(str) {
     return str
